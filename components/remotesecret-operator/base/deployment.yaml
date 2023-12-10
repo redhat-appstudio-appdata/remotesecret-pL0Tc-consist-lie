@@ -10,6 +10,7 @@ metadata:
     app.kubernetes.io/part-of: remotesecret
   name: remotesecret-operator
 spec:
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -22,7 +23,7 @@ spec:
         app.kubernetes.io/instance: remotesecret-operator
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:42f7b9c2174e7c38b5face4b53fe7977a4ef364b18a8b1f48f49bd6c08cb9737
+      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:f7f298c895ef1572b21fe58980ecb0cceb604a1aa0978e9c1e47571ed807f7d1
         imagePullPolicy: Always
         name: container-image
         ports:
