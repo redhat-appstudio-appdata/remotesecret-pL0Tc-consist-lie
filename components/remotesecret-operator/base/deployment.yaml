@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: remotesecret-operator
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:403825a231328196ad6ef218d53be676c37c82bc256e96b811b58c8e9a66c04c
+      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:c7f9a7a2e0c1da03af9234a95ee8698927c28eeaa11dacbf10f6433a23ef605b
         imagePullPolicy: Always
         name: container-image
         ports:
