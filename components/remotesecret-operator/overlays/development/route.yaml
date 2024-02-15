@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: remotesecret-operator
     app.kubernetes.io/part-of: remotesecret
-  name: remotesecret-operatorcvnl
+  name: remotesecret-operatormj0s
 spec:
   port:
     targetPort: 8080
