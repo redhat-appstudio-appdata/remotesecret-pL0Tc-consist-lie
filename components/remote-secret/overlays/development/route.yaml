@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: remote-secret
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: remote-secret
+    app.kubernetes.io/part-of: remotesecret
+  name: remote-secret6zq0
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: remote-secret
+    weight: 100
+status: {}
