@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:d1da689fbb28b2b28a0b5d7474a9c60e4b4dd1a35d784688cdbbb79759a65ab7
+      - image: quay.io/redhat-user-workloads/rhtap-spi-tenant/remotesecret/remotesecret-operator@sha256:268246374d84a64f3875a0c29d9e7e68d7c357e2e352ef2eca09b42284abeb09
         name: container-image
         resources: {}
 status: {}
